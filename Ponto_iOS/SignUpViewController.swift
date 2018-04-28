@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
-
+    @IBOutlet weak var userTextFields: UITextField!
+    @IBOutlet weak var passwordRegisterTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +24,17 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func SignUp(_ sender: Any) {
 
+        
+        Auth.auth().createUser(withEmail: userTextFields.text!, password: passwordRegisterTextField.text!, completion: { (user, error) in
+        
+            
+            print("usuario criado")
+        })
+    }
+    
+    
     /*
     // MARK: - Navigation
 

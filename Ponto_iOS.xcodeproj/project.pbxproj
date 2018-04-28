@@ -15,6 +15,7 @@
 		7646895220949C9400785DC1 /* Ponto_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646895120949C9400785DC1 /* Ponto_iOSTests.swift */; };
 		7646895D20949C9400785DC1 /* Ponto_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646895C20949C9400785DC1 /* Ponto_iOSUITests.swift */; };
 		A69C550F2E790AEE0A7C2761 /* Pods_Ponto_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4248F5055D1AD8D211353FCD /* Pods_Ponto_iOS.framework */; };
+		E40CF5302094E7350070300B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40CF52F2094E7350070300B /* SignUpViewController.swift */; };
 		E4E4FCE42094CC8C0099902A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		7646895820949C9400785DC1 /* Ponto_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ponto_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7646895C20949C9400785DC1 /* Ponto_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ponto_iOSUITests.swift; sourceTree = "<group>"; };
 		7646895E20949C9400785DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E40CF52F2094E7350070300B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 		7646893B20949C9400785DC1 /* Ponto_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E40CF52F2094E7350070300B /* SignUpViewController.swift */,
 				E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */,
 				7646893C20949C9400785DC1 /* AppDelegate.swift */,
 				7646893E20949C9400785DC1 /* ViewController.swift */,
@@ -333,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40CF5302094E7350070300B /* SignUpViewController.swift in Sources */,
 				7646893F20949C9400785DC1 /* ViewController.swift in Sources */,
 				7646893D20949C9400785DC1 /* AppDelegate.swift in Sources */,
 			);
