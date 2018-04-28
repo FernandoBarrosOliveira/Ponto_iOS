@@ -44,7 +44,7 @@ playground.xcworkspace
 
 # CocoaPods - Refactored to standalone file
 #Pods/
-Podfile.lock
+#Podfile.lock
 
 # Carthage - Refactored to standalone file
 
