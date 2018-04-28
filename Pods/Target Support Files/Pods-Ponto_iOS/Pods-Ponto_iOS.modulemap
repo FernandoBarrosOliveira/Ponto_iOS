@@ -1,0 +1,6 @@
+framework module Pods_Ponto_iOS {
+  umbrella header "Pods-Ponto_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
