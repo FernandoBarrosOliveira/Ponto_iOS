@@ -28,7 +28,7 @@ class PontoViewController: UIViewController {
         super.viewDidLoad()
         
         dateFormatterDate.dateFormat = "dd/MM/yyyy"
-        dateFormatterTime.dateFormat = "hh:mm:ss"
+        dateFormatterTime.dateFormat = "HH:mm:ss"
 //        dateFormatterDate.dateStyle = .medium
 //        dateFormatterDate.timeStyle = .none
 //
