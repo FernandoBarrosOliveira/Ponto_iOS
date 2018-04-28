@@ -15,6 +15,7 @@
 		7646895220949C9400785DC1 /* Ponto_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646895120949C9400785DC1 /* Ponto_iOSTests.swift */; };
 		7646895D20949C9400785DC1 /* Ponto_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646895C20949C9400785DC1 /* Ponto_iOSUITests.swift */; };
 		A69C550F2E790AEE0A7C2761 /* Pods_Ponto_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4248F5055D1AD8D211353FCD /* Pods_Ponto_iOS.framework */; };
+		E4E4FCE42094CC8C0099902A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7646895820949C9400785DC1 /* Ponto_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ponto_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7646895C20949C9400785DC1 /* Ponto_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ponto_iOSUITests.swift; sourceTree = "<group>"; };
 		7646895E20949C9400785DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		7646893B20949C9400785DC1 /* Ponto_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */,
 				7646893C20949C9400785DC1 /* AppDelegate.swift */,
 				7646893E20949C9400785DC1 /* ViewController.swift */,
 				7646894020949C9400785DC1 /* Main.storyboard */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7646894720949C9400785DC1 /* LaunchScreen.storyboard in Resources */,
+				E4E4FCE42094CC8C0099902A /* GoogleService-Info.plist in Resources */,
 				7646894420949C9400785DC1 /* Assets.xcassets in Resources */,
 				7646894220949C9400785DC1 /* Main.storyboard in Resources */,
 			);
