@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763E5E2A2094F24800B31FB8 /* PontoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E5E292094F24800B31FB8 /* PontoViewController.swift */; };
 		7646893D20949C9400785DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646893C20949C9400785DC1 /* AppDelegate.swift */; };
 		7646893F20949C9400785DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646893E20949C9400785DC1 /* ViewController.swift */; };
 		7646894220949C9400785DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7646894020949C9400785DC1 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		10A6F8D0CADF93FFA3A2DB50 /* Pods-Ponto_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ponto_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ponto_iOS/Pods-Ponto_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		39DED1357FA0F297FB1639C2 /* Pods-Ponto_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ponto_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ponto_iOS/Pods-Ponto_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4248F5055D1AD8D211353FCD /* Pods_Ponto_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ponto_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763E5E292094F24800B31FB8 /* PontoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontoViewController.swift; sourceTree = "<group>"; };
 		7646893920949C9400785DC1 /* Ponto_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ponto_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7646893C20949C9400785DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7646893E20949C9400785DC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				7646894320949C9400785DC1 /* Assets.xcassets */,
 				7646894520949C9400785DC1 /* LaunchScreen.storyboard */,
 				7646894820949C9400785DC1 /* Info.plist */,
+				763E5E292094F24800B31FB8 /* PontoViewController.swift */,
 			);
 			path = Ponto_iOS;
 			sourceTree = "<group>";
@@ -336,6 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+
+				763E5E2A2094F24800B31FB8 /* PontoViewController.swift in Sources */,
 				E40CF5302094E7350070300B /* SignUpViewController.swift in Sources */,
 				7646893F20949C9400785DC1 /* ViewController.swift in Sources */,
 				7646893D20949C9400785DC1 /* AppDelegate.swift in Sources */,
