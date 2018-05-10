@@ -16,6 +16,11 @@
 		7646895220949C9400785DC1 /* Ponto_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646895120949C9400785DC1 /* Ponto_iOSTests.swift */; };
 		7646895D20949C9400785DC1 /* Ponto_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646895C20949C9400785DC1 /* Ponto_iOSUITests.swift */; };
 		A69C550F2E790AEE0A7C2761 /* Pods_Ponto_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4248F5055D1AD8D211353FCD /* Pods_Ponto_iOS.framework */; };
+		E409F9F920A141A700444B9B /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409F9F820A141A700444B9B /* Company.swift */; };
+		E409F9FB20A2998200444B9B /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409F9FA20A2998200444B9B /* LocalCollection.swift */; };
+		E409F9FD20A29F8D00444B9B /* CadTimePunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409F9FC20A29F8D00444B9B /* CadTimePunch.swift */; };
+		E409F9FF20A3E23200444B9B /* PunchClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409F9FE20A3E23200444B9B /* PunchClock.swift */; };
+		E409FA0220A3F0D600444B9B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409FA0120A3F0D600444B9B /* DateHelper.swift */; };
 		E40CF5302094E7350070300B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40CF52F2094E7350070300B /* SignUpViewController.swift */; };
 		E4E4FCE42094CC8C0099902A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -55,6 +60,11 @@
 		7646895820949C9400785DC1 /* Ponto_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ponto_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7646895C20949C9400785DC1 /* Ponto_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ponto_iOSUITests.swift; sourceTree = "<group>"; };
 		7646895E20949C9400785DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E409F9F820A141A700444B9B /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		E409F9FA20A2998200444B9B /* LocalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalCollection.swift; path = "../../../quickstart-ios/firestore/FriendlyEats/LocalCollection.swift"; sourceTree = "<group>"; };
+		E409F9FC20A29F8D00444B9B /* CadTimePunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadTimePunch.swift; sourceTree = "<group>"; };
+		E409F9FE20A3E23200444B9B /* PunchClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchClock.swift; sourceTree = "<group>"; };
+		E409FA0120A3F0D600444B9B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		E40CF52F2094E7350070300B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +137,8 @@
 		7646893B20949C9400785DC1 /* Ponto_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E409FA0020A3F0B600444B9B /* helper */,
+				E409F9F720A1418400444B9B /* modal */,
 				E40CF52F2094E7350070300B /* SignUpViewController.swift */,
 				E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */,
 				7646893C20949C9400785DC1 /* AppDelegate.swift */,
@@ -156,6 +168,25 @@
 				7646895E20949C9400785DC1 /* Info.plist */,
 			);
 			path = Ponto_iOSUITests;
+			sourceTree = "<group>";
+		};
+		E409F9F720A1418400444B9B /* modal */ = {
+			isa = PBXGroup;
+			children = (
+				E409F9FA20A2998200444B9B /* LocalCollection.swift */,
+				E409F9F820A141A700444B9B /* Company.swift */,
+				E409F9FC20A29F8D00444B9B /* CadTimePunch.swift */,
+				E409F9FE20A3E23200444B9B /* PunchClock.swift */,
+			);
+			path = modal;
+			sourceTree = "<group>";
+		};
+		E409FA0020A3F0B600444B9B /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				E409FA0120A3F0D600444B9B /* DateHelper.swift */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,15 +346,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ponto_iOS/Pods-Ponto_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -339,12 +382,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-
 				763E5E2A2094F24800B31FB8 /* PontoViewController.swift in Sources */,
+				E409F9FB20A2998200444B9B /* LocalCollection.swift in Sources */,
 				E40CF5302094E7350070300B /* SignUpViewController.swift in Sources */,
 				7646893F20949C9400785DC1 /* ViewController.swift in Sources */,
+				E409F9F920A141A700444B9B /* Company.swift in Sources */,
+				E409F9FF20A3E23200444B9B /* PunchClock.swift in Sources */,
+				E409FA0220A3F0D600444B9B /* DateHelper.swift in Sources */,
 				7646893D20949C9400785DC1 /* AppDelegate.swift in Sources */,
+				E409F9FD20A29F8D00444B9B /* CadTimePunch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

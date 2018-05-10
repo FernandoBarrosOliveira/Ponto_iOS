@@ -26,6 +26,20 @@ class ViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let company = Company.init(name: "FCM Sistemas")
+        company.create(company:  company);
+        //Firestore.firestore().collection("company").addDocument(data: company.dictionary)
+        
+  
+        
+        let timePunch = CadTimePunch.init(company: company, weekday: 1, enterTime: Date(), intervalBegin: Date(), intervalEnd: Date(), leaveTime: Date(), workHourDay: Date())
+        timePunch.create(timepuch: timePunch)
+        
+        let punch = PunchClock.init(company: company, weekday: 1, punch: Date())
+        punch.create(punch: punch)
+       // Firestore.firestore().collection("cadtimepunch").addDocument(data: timePunch.dictionary)
+        
         /*
         Auth.auth().addStateDidChangeListener({ (auth, user) in
             if user != nil {
