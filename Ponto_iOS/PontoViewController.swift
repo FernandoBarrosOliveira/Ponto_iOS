@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class PontoViewController: UIViewController {
 
@@ -13,6 +14,17 @@ class PontoViewController: UIViewController {
     @IBOutlet weak var currentTimeLabel: UILabel!
     @IBOutlet weak var currentDateLabel: UILabel!
     
+    @IBAction func singup(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            self.dismiss(animated: true, completion: nil)
+        } catch let error as NSError {
+            print("Nao conseguimos sair: \(error)")
+        }
+        
+    }
+
     let dateFormatterDate = DateFormatter()
     let dateFormatterTime = DateFormatter()
     

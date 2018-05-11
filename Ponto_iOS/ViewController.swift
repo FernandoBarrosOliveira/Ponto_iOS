@@ -19,14 +19,21 @@ class ViewController: UIViewController {
     @IBAction func Login(_ sender: Any) {
         Auth.auth().signIn(withEmail: loginTextField.text!, password: senhaTextField.text!, completion: { (user, error) in
             
-            print("Acabei de logar")
+            if error == nil{
+                self.performSegue(withIdentifier: "grantedSegue", sender: nil)
+                     print("Acabei de logar")
+            }else{
+ 
+            }
+            
+       
             })
         
     }
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         /*
         let company = Company.init(name: "FCM Sistemas")
         company.create(company:  company);
         //Firestore.firestore().collection("company").addDocument(data: company.dictionary)
@@ -39,13 +46,14 @@ class ViewController: UIViewController {
         let punch = PunchClock.init(company: company, weekday: 1, punch: Date())
         punch.create(punch: punch)
        // Firestore.firestore().collection("cadtimepunch").addDocument(data: timePunch.dictionary)
-        
-        /*
+        */
+
         Auth.auth().addStateDidChangeListener({ (auth, user) in
             if user != nil {
-                self.performSegue(withIdentifier: "GroupToDoList", sender: nil)
+                print(user?.email)
+                self.performSegue(withIdentifier: "grantedSegue", sender: nil)
             }
-        })*/
+        })
         // Do any additional setup after loading the view, typically from a nib.
     }
 
