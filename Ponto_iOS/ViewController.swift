@@ -12,9 +12,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
-  
-    
-
     
     @IBAction func Login(_ sender: Any) {
         Auth.auth().signIn(withEmail: loginTextField.text!, password: senhaTextField.text!, completion: { (user, error) in
@@ -23,16 +20,24 @@ class ViewController: UIViewController {
                 self.performSegue(withIdentifier: "grantedSegue", sender: nil)
                      print("Acabei de logar")
             }else{
- 
+                DialogHelper.dialogoErro(mensagemErro: "erro ao realizar o login", view: self)
             }
             
        
-            })
+        })
         
     }
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        Auth.auth().addStateDidChangeListener({ (auth, user) in
+            print(user?.email)
+            if user != nil {
+                print(user?.email)
+                self.performSegue(withIdentifier: "grantedSegue", sender: nil)
+            }
+        })
+        
          /*
         let company = Company.init(name: "FCM Sistemas")
         company.create(company:  company);
@@ -48,12 +53,7 @@ class ViewController: UIViewController {
        // Firestore.firestore().collection("cadtimepunch").addDocument(data: timePunch.dictionary)
         */
 
-        Auth.auth().addStateDidChangeListener({ (auth, user) in
-            if user != nil {
-                print(user?.email)
-                self.performSegue(withIdentifier: "grantedSegue", sender: nil)
-            }
-        })
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 

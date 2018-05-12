@@ -21,6 +21,9 @@
 		E409F9FD20A29F8D00444B9B /* CadTimePunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409F9FC20A29F8D00444B9B /* CadTimePunch.swift */; };
 		E409F9FF20A3E23200444B9B /* PunchClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409F9FE20A3E23200444B9B /* PunchClock.swift */; };
 		E409FA0220A3F0D600444B9B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409FA0120A3F0D600444B9B /* DateHelper.swift */; };
+		E409FA0420A6517400444B9B /* CompanyViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409FA0320A6517400444B9B /* CompanyViewControllerTableViewCell.swift */; };
+		E409FA0620A6543200444B9B /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409FA0520A6543200444B9B /* CompanyViewController.swift */; };
+		E409FA0820A6A20D00444B9B /* DialogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409FA0720A6A20D00444B9B /* DialogHelper.swift */; };
 		E40CF5302094E7350070300B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40CF52F2094E7350070300B /* SignUpViewController.swift */; };
 		E4E4FCE42094CC8C0099902A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -65,6 +68,9 @@
 		E409F9FC20A29F8D00444B9B /* CadTimePunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadTimePunch.swift; sourceTree = "<group>"; };
 		E409F9FE20A3E23200444B9B /* PunchClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchClock.swift; sourceTree = "<group>"; };
 		E409FA0120A3F0D600444B9B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		E409FA0320A6517400444B9B /* CompanyViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		E409FA0520A6543200444B9B /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		E409FA0720A6A20D00444B9B /* DialogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogHelper.swift; sourceTree = "<group>"; };
 		E40CF52F2094E7350070300B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E4E4FCE32094CC8C0099902A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +150,8 @@
 				7646893C20949C9400785DC1 /* AppDelegate.swift */,
 				7646893E20949C9400785DC1 /* ViewController.swift */,
 				7646894020949C9400785DC1 /* Main.storyboard */,
+				E409FA0520A6543200444B9B /* CompanyViewController.swift */,
+				E409FA0320A6517400444B9B /* CompanyViewControllerTableViewCell.swift */,
 				7646894320949C9400785DC1 /* Assets.xcassets */,
 				7646894520949C9400785DC1 /* LaunchScreen.storyboard */,
 				7646894820949C9400785DC1 /* Info.plist */,
@@ -185,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				E409FA0120A3F0D600444B9B /* DateHelper.swift */,
+				E409FA0720A6A20D00444B9B /* DialogHelper.swift */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -387,9 +396,12 @@
 				E40CF5302094E7350070300B /* SignUpViewController.swift in Sources */,
 				7646893F20949C9400785DC1 /* ViewController.swift in Sources */,
 				E409F9F920A141A700444B9B /* Company.swift in Sources */,
+				E409FA0820A6A20D00444B9B /* DialogHelper.swift in Sources */,
 				E409F9FF20A3E23200444B9B /* PunchClock.swift in Sources */,
 				E409FA0220A3F0D600444B9B /* DateHelper.swift in Sources */,
 				7646893D20949C9400785DC1 /* AppDelegate.swift in Sources */,
+				E409FA0420A6517400444B9B /* CompanyViewControllerTableViewCell.swift in Sources */,
+				E409FA0620A6543200444B9B /* CompanyViewController.swift in Sources */,
 				E409F9FD20A29F8D00444B9B /* CadTimePunch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

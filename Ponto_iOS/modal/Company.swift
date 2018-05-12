@@ -14,16 +14,18 @@ struct Company{
     var name: String
     private let ref: DatabaseReference?
     
-    init(name: String ){
+    init(name: String, ref: DatabaseReference ){
         self.name = name
-        ref = Database.database().reference().child("company") // colocar essa referencia de forma global depois
-        self.id = (ref?.childByAutoId().key)!
+        self.ref = ref.child("company")
+        self.id = (ref.childByAutoId().key)
+        // colocar essa referencia de forma global depois
+        
     }
     
-    init(id: String, name: String){
+    init(id: String, name: String, ref: DatabaseReference){
         self.id = id
         self.name = name
-        self.ref = Database.database().reference().child("company")
+        self.ref = ref
     }
     
     func toDictionary() -> Any{
@@ -35,26 +37,9 @@ struct Company{
     
     
     func create(company: Company) -> Void{
-        ref?.setValue(company.toDictionary())
+        ref?.child(self.id).setValue(company.toDictionary())
     }
-    
-    func listAll() -> [Company]{
-        var userId = Auth.auth().currentUser?.uid
-     
-        ref?.child(userId!).observeSingleEvent(of: .value, with: { (snapshot) in
-            var companies:[Company] = []
-            for object in snapshot.children.allObjects as! [DataSnapshot]{
-                let value = object.value as? NSDictionary
-                
-                companies.append(Company(id: value?["id"] as! String, name: value?["name"] as! String))
-            }
 
-        }) { (error) in
-            print(error.localizedDescription)
-        }
-        return []
-    
-    }
 }
 
 
